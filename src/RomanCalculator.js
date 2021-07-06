@@ -4,6 +4,7 @@ class RomanCalculator{
     }
 
     getDecimalNumberValue(romanNumeral){
+        
         switch(romanNumeral){
             case 'I': return 1;            
             case 'V': return 5;
