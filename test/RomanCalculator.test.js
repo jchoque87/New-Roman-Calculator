@@ -1,36 +1,33 @@
 import {RomanCalculator} from '../src/RomanCalculator'
 
-test('Give a number decimal 1 toRomanNumber should return I',()=>{
-    const obj = new RomanCalculator();
-    expect(obj.toRomanNumber(1)).toBe('I');    
+test("Given a roman numeral 'V' Roman Calculator should return 5", () => {
+    const calculator = new RomanCalculator
+    expect(calculator.getDecimalNumberValue('V')).toBe(5)
 })
 
-test('Give a number decimal 5 toRomanNumber should return V',()=>{
-    const obj = new RomanCalculator();
-    expect(obj.toRomanNumber(5)).toBe('V');    
+test("Given a roman numeral 'I' Roman Calculator should return 1", () => {
+    const calculator = new RomanCalculator
+    expect(calculator.getDecimalNumberValue('I')).toBe(1)
 })
 
-test('Give a number decimal 10 toRomanNumber should return X',()=>{
-    const obj = new RomanCalculator();
-    expect(obj.toRomanNumber(10)).toBe('X');    
+test("Given a roman numeral 'X' Roman Calculator should return 10", () => {
+    const obj = new RomanCalculator
+    expect(obj.getDecimalNumberValue('X')).toBe(10)
+})
+test("Given a roman numeral 'L' Roman Calculator should return 50", () => {
+    const obj = new RomanCalculator
+    expect(obj.getDecimalNumberValue('L')).toBe(50)
 })
 
-test('Give a number decimal 50 toRomanNumber should return L',()=>{
-    const obj = new RomanCalculator();
-    expect(obj.toRomanNumber(50)).toBe('L');    
+test("Given a roman numeral 'D' Roman Calculator should return 500", () => {
+    const obj = new RomanCalculator
+    expect(obj.getDecimalNumberValue('D')).toBe(500)
 })
-
-test('Give a number decimal 100 toRomanNumber should return C',()=>{
-    const obj = new RomanCalculator();
-    expect(obj.toRomanNumber(100)).toBe('C');    
+test("Given a roman numeral 'C' Roman Calculator should return 100", () => {
+    const obj = new RomanCalculator
+    expect(obj.getDecimalNumberValue('C')).toBe(100)
 })
-
-test('Give a number decimal 500 toRomanNumber should return D',()=>{
-    const obj = new RomanCalculator();
-    expect(obj.toRomanNumber(500)).toBe('D');    
-})
-
-test('Give a number decimal 1000 toRomanNumber should return M',()=>{
-    const obj = new RomanCalculator();
-    expect(obj.toRomanNumber(1000)).toBe('M');    
+test("Given a roman numeral 'M' Roman Calculator should return 1000", () => {
+    const obj = new RomanCalculator
+    expect(obj.getDecimalNumberValue('M')).toBe(1000)
 })
