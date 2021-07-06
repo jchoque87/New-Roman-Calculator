@@ -31,3 +31,8 @@ test("Given a roman numeral 'M' Roman Calculator should return 1000", () => {
     const obj = new RomanCalculator
     expect(obj.getDecimalNumberValue('M')).toBe(1000)
 })
+
+test("Given not a roman number 'R' Roman Calculator should return 'not a number'", () => {
+    const obj = new RomanCalculator
+    expect(obj.getDecimalNumberValue('M')).toBe(1000)
+})
